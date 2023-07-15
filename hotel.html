@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title>hotel booking</title>
+</head>
+
+<body background="https://wallpaperaccess.com/full/8183894.jpg"
+ style="background-repeat: no-repeat; background-size: 100% 100%;">
+    <form style="text-align:center; border: 2px double black;width:605px;margin:0 auto;">
+        <div style=" background-color:rgb(219, 160, 49);">
+            <h1 style="text-align: center;color: white; font-family: lato;">Travel's Hotel </h1>
+        </div>
+        
+        <fieldset style="border: 2px solid orange;width:505px;margin:0 auto; text-align:left ">
+            <font face="Microsoft YaHei UI" color="black" size="3">
+                <label><b>First name:</b></label>
+                <input type="text" name="first_name" required>
+
+                <br>
+                <br>
+                <label><b>Last name:</b></label>
+                <input type="text" name="last_name" required>
+
+                <br>
+                <br>
+                <label><b> City:</b> </label>
+                <textarea rows="4" cols="50" name="address" required></textarea>
+
+
+                <br>
+                <br>
+                <label><b>City:</b></label>
+                <input type="text" name="city" required>
+                <br>
+                <br>
+                <label><b>State:</b></label>
+                <input type="text" name="state" size="10" required>
+
+                <br>
+                <br>
+                <label><b>Zip Code:</b></label>
+                <input type="text" name="zip_code" size="10" required>
+
+                <br>
+                <br>
+                <label><b>Phone number</b></label>
+                <input type="text" value="+91" size="1" readonly>
+                <input type="tel" name="phone_number" placeholder="123-456-789" required>
+
+                <br>
+                <br>
+                <label><b>Email address:</b></label>
+                <input type="email" name="email" required>
+
+                <br>
+                <br>
+                <label><b>Check-in date:</b></label>
+                <input type="date" name="check_in_date" required>
+
+
+                <label><b>Check-in time:</b></label>
+                <input type="time" name="check_in_time" required>
+                <br>
+                <br>
+                <label><b>Check-out date:</b></label>
+
+                <input type="date" name="check_out_date" required>
+
+
+                <label><b></b>Check-out time:</label>
+
+                <input type="time" name="check_out_time" required>
+
+
+                <br>
+                <BR>
+                <label for="room-type"><b>Choose a room type:</b></label>
+                <select id="room-type" name="room_type">
+                    <option value="default">--Select--</option>
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                    <option value="exclusive">Exclusive</option>
+                </select>
+
+
+
+
+
+
+                <span id="result"></span>
+                <script>
+                    const roomType = document.getElementById("room-type");
+                    const result = document.getElementById("result");
+
+                    function displayResult() {
+                        if (roomType.value === "default") {
+                            result.textContent = "";
+                        } else if (roomType.value === "standard") {
+                            result.textContent = "You have selected a Standard room.";
+                        } else if (roomType.value === "deluxe") {
+                            result.textContent = "You have selected a Deluxe room.";
+                        } else if (roomType.value === "suite") {
+                            result.textContent = "You have selected a Suite room.";
+                        } else if (roomType.value === "exclusive") {
+                            result.textContent = "You have selected an Exclusive room.";
+                        }
+                    }
+
+                    displayResult();
+
+                    roomType.onchange = displayResult;
+                </script>
+                <br>
+                <br> <b>Adults</b>
+                <input list="adults" name="adults" size="10" required>
+                <datalist id="adults">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </datalist>
+
+                <br>
+                <br> <b>Children</b>
+                <select name="children">
+                    <option selected></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+
+
+
+
+
+            </font>
+            <br>
+            <br>
+            <input type="checkbox" required>I agree to submit these details.
+            <br>
+            <br>
+            <button type="submit" "name="submit" onclick="alert('Your form has been submitted successfully')"> Submit</button>
+            <button type="reset" name="reset">Reset</button>
+        </fieldset>
+        <bR>
+    </form>
+
+
+
+</body>
+
+</html>

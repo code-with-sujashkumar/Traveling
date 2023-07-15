@@ -1,0 +1,573 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="subodh.html" id="logo"><span>T</span>ravel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="proj.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+    <!-- Home Section Start -->
+           
+           <div class="home">
+   
+        <div class="content">
+            <h5>Welcome To World</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>Enjoy Your Favorite Destination</p>
+            <a href="#book">Book Place</a>
+
+        </div>
+    </div>
+    <!-- Home Section End -->
+
+
+
+
+
+    <!-- Section Book Start -->
+    <section class="book" id="book">
+      <div class="container">
+
+        <div class="main-text">
+          <h1><span>B</span>ook</h1>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="book-img.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+              <span>Name:</span>
+              <input type="text" class="form-control" placeholder="First Name" required><br>
+              <input type="text" class="form-control" placeholder="Last Name" required><br>
+              <span>Members:</span><br>
+              <input type="text" class="form-control" placeholder="How many" required>       
+              <br>
+              <span>Phone number</span>
+              <input type="text" value="+91" size="1" readonly>
+              <input type="tel" placeholder="123-456-789">
+              <br>        
+              <span>Email Id:</span>
+              <input type="email" class="form-control" placeholder="Email Id" required><br>
+             <span>Destination:</span>
+              <input type="text" class="form-control" placeholder="From" required><br>
+              <input type="text" class="form-control" placeholder="To" required><br>
+              <span>Arrival:</span>
+              <input type="date" class="form-control" placeholder="Arrivals" required><br>
+              <span>Leaving:</span>
+              <input type="date" class="form-control" placeholder="Leaving" required><br>
+              <input type="checkbox" required>I agree to submit these details
+              <br>
+              <br>
+              <div class="container">
+                <button type="submit" class="btn" onclick="openPopup()">Book Now</button>
+                <div class="popup" id="popup">
+                  <img src="tick.jpg">
+                  <h2>Thank You!</h2>
+                  <P>Your details has been successfully submitted. Thanks!</P>
+                  <button type="button" onclick="closePopup()">OK</button>
+                </div>
+              </div>
+              <script>
+                let popup= document.getElementById("popup");
+                function openPopup(){
+                  popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                  popup.classList.remove("open-popup");
+                }
+              </script>
+              
+              
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Section Book End -->
+
+
+
+
+
+
+
+
+    <!-- Section Packages Start -->
+    <section class="packages" id="packages">
+      <div class="container">
+        
+        <div class="main-txt">
+          <h1><span>P</span>ackages</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="uk.png">
+              <div class="card-body">
+                <h3>United Kingdom</h3>
+                <p>The U.K. is known all over the world for its sports and literature. Soccer, rugby, cricket, boxing, and golf were all invented in the United Kingdom.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="france.png" alt="">
+              <div class="card-body">
+                <h3>France</h3>
+                <p>France is a stunning country and should be at the top of your list of places to visit. It's full of cultural attractions, renowned food and wine, and alluring landscapes. </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="pakistan.png" alt="">
+              <div class="card-body">
+                <h3>Pakistan</h3>
+                <p>Pakistan have world most beautiful places for visit, specially at its best in northern areas of Pakistan and Kashmir region. This part is famous because of sky high mountains, beautiful lakes, and amazing wildlife.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="italy.png" alt="">
+              <div class="card-body">
+                <h3>Italy</h3>
+                <p>The land of incredible art, delicious food, great music, rich culture and the land of most glamorous fashion brands. Italy has it all, and Italian fashion is a huge part of that.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="india.png" alt="">
+              <div class="card-body">
+                <h3>India</h3>
+                <p>India is one of the world’s most fascinating travel destinations. A billion people, an ancient and unbroken culture, a kaleidoscope of sights, sounds, smells and one of the fastest changing societies on earth.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="us.png" alt="">
+              <div class="card-body">
+                <h3>United States</h3>
+                <p>From pristine and beautiful beaches to a rich and natural landscape of mountains and forests, the USA is one of the most beautiful and fascinating countries to explore.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Section Packages End -->
+
+
+
+
+
+
+
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card" >
+              <i class="fas fa-hotel"></i>
+              <div class="card-body" >
+               
+                <a href="hotel.html"><font color="black"><h3>Affordable Hotel</h3></font></a>
+                <p>Comfy stays at affordable prices, with plenty of options in popular neighbourhoods.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <a href="menu.html"><font color="black"><h3>Food & Drinks</h3></font></a>
+                <p>We have amazing food & drink here.Flat 10% discount upto website booking.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <a href="safety.html"><font color="black"><h3>Saftey Guide</h3></font></a>
+                <p>Please complete the health questionnaire 24-hour prior to your flight.You will receive an email with a QR code.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <a href="Around.html"><font color="black"><h3>Around The World</h3></font></a>
+                <p>Explore the World with us. We have great packages for you.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <a href="https://www.ixigo.com/flights"><font color="black"><h3>Fastest Travel</h3></font></a>
+                <p>We have fastest travelling service for our customers.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <a href="https://www.booking.com/articles/world-top-adventure-travel-destinations.html"><font color="black"><h3>Adventures</h3></font></a>
+                <p>Adventure  top rated tourist places for more great experience in your trip.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Services End -->
+
+
+
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g1.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g2.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g3.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g4.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g5.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="g6.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+
+
+
+
+
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>About <span>Us</span></h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="about-img.png" alt="">
+            </div>
+          </div>
+       
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>Welcome to Travel</h2>
+           
+            <p>At Travel, we believe that travel has the power to enrich lives and create unforgettable experiences. With a passion for exploration and a commitment to exceptional service, we strive to be your trusted partner in planning and enjoying remarkable journeys.<br>
+                   <b>Our Mission:</b><br>
+                  We are dedicated to curating and delivering extraordinary travel experiences that inspire, educate, and connect people across the globe. 
+                  Whether you're a seasoned adventurer seeking off-the-beaten-path destinations or a family looking for a memorable vacation, our mission is to craft personalized itineraries that cater to your unique interests and preferences.
+           </p>
+          </div>
+          <div class="content" id="invisible-text">
+        
+            <p><b>Why Choose Us:</b><br>
+
+             1.Expertise
+            <br>
+             2.Personalized Service
+            <br>
+            3.Unforgettable Experiences
+            <br>
+           4.Trust and Reliability
+            <br>
+          <b>Join Us on the Journey:</b><br>
+           Whether you're a solo traveler, a couple on a romantic getaway, or a group of friends seeking an epic adventure, we invite you to join us on a journey of discovery. 
+           Let us be your compass, guiding you to the most awe-inspiring destinations and creating memories that will last a lifetime.
+
+          Get in touch with our passionate team today, and let's start planning your next unforgettable adventure!</p>
+     
+     
+           
+     </div>
+    </div>
+    <script>
+      function toggleContent() {
+      var content = document.getElementById("invisible-text");
+      var button = document.getElementById("read-more-btn");
+      
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        button.innerHTML = "Read Less";
+      } else {
+        content.style.display = "none";
+        button.innerHTML = "Read More";
+      }
+    }
+
+    </script>
+    <button id="about-btn" onclick="toggleContent()">Read More...</button>
+    </section>
+    <!-- About End -->
+
+   <!-- Footer Start -->
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>Enjoy Your Favorite Destination</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">Sujash Coding</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
